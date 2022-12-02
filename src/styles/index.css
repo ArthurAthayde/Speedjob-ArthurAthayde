@@ -1,0 +1,148 @@
+.main__container {
+    background-color: #E9ECEF;
+    height: 100%;
+    width: 100%;
+}
+
+.frontend__container,
+.backend__container {
+    height: 300px;
+    width: 100vw;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 20px 0;
+}
+
+.frontend__container>h3,
+.backend__container>h3 {
+    
+    margin-left: 25px;
+ 
+    color: black;
+    font-size: 16px;
+}
+
+.frontend__itens {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 1rem;
+
+    width: 100%;
+
+    margin-left: 20px;
+
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+    overflow-x: hidden;
+}
+
+.frontend__card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 37px 24px;
+
+    background-color: var(--white-500);
+
+    max-height: 240px;
+    min-width: 347px;
+    width: 347px;
+    border-radius: 8px;
+
+    line-height: 110%;
+}
+
+
+.frontend__header {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-left: 59px;
+}
+
+.frontend__card-icon {
+    position: absolute;
+    left: 0;
+
+    height: 48px;
+    width: 48px;
+}
+
+.frontend__card-title {
+    color: #212529;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.frontend__card-description {
+    color: #495057;
+
+    width: 299px;
+    height: 80px;
+    margin: 16px 0;
+
+    font-size: 12px;
+
+    line-height: 150%;
+}
+
+.frontend__card-local {
+    color: #495057;
+    font-size: 12px;
+}
+
+.frontend__tags-list {
+    display: flex;
+    gap: 6px;
+
+    font-size: 10px;
+    color: #4D52D3;
+}
+
+.frontend__tags-itens {
+    background-color: #EEEEFB;
+
+    height: 16px;
+    width: 59px;
+    border-radius: 2px;
+
+    text-align: center;
+}
+
+@media(min-width: 769px) {
+
+    .frontend__container,
+    .backend__container {
+        height: 650px;
+        width: 60vw;
+
+        margin: 30px auto;       
+    }
+
+    .frontend__container>h3,
+    .backend__container>h3 {
+
+        left: 20%;
+
+    }
+
+    .frontend__itens{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 550px;
+        justify-content: space-between;
+    }
+}
